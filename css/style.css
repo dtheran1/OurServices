@@ -1,1 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body {
+  background: rgb(211, 210, 210);
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  padding: 22px 0px;
+  color: #00cc99;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(240px, 1fr)
+  ); /* repite cada card calculando automaticamente el width, que para cada card es de 240px como min y max width calculado */
+  grid-gap: 15px;
+  padding: 20px;
+}
+
+.card-container .card {
+  padding: 10px;
+  border: 3px solid #00cc99;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 5px 5px #00cc99;
+}
+
+/* .card-container .card:hover{
+    scale: 1;
+    background-color: sca;
+} */
+
+.card-container .card .card-icon {
+  margin-top: 10px;
+}
+
+.card-container .card .card-icon span {
+  margin: 10px 0px;
+  font-size: 32px;
+  color: #00cc99;
+}
+
+.card-container .card .card-title {
+  color: #00cc99;
+  font-size: 21px;
+  margin-top: 5px;
+}
+
+.card-container .card p {
+  font-size: 14px;
+  color: #747474;
+  padding: 10px;
+}
+
+.card-container .card a {
+  color: #00cc99;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+.card-container .card a:hover {
+  color: #82b6a9;
+}
